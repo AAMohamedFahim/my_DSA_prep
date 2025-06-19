@@ -2,8 +2,6 @@
 
 # Key Data Structures for Coding Interviews
 
-To clear coding rounds in top tech companies (like Google, Amazon, Microsoft, etc.), you’ll need to be well-versed in certain data structures and algorithms. The interview will test your problem-solving ability, logical thinking, and your understanding of data structures that can efficiently solve complex problems.
-
 ## Table of Contents
 - [1. Arrays](#1-arrays)
 - [2. Strings](#2-strings)
