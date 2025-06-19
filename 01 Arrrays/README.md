@@ -20,10 +20,6 @@
      ```
 ---
 
-Comprehensive Guide to Java Arrays
-
----
-
 ## Operations Overview
 
 Below are the core operations you’ll perform on Java arrays:
