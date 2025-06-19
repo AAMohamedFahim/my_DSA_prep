@@ -20,21 +20,6 @@
      ```
 ---
 
-## Operations Overview
-
-Below are the core operations you’ll perform on Java arrays:
-
-1. **Declaration & Creation** – defining the array type and allocating memory.
-2. **Access & Update** – reading and writing elements by index.
-3. **Traversal** – iterating over elements (for‑loop, enhanced for, streams).
-4. **Search** – linear scan or binary search on sorted arrays.
-5. **Sorting** – ordering elements via `Arrays.sort`.
-6. **Copying & Resizing** – duplicating or extending arrays with `Arrays.copyOf`.
-7. **Filling** – setting all elements to a specific value using `Arrays.fill`.
-8. **Equality Check** – comparing arrays with `Arrays.equals`/`deepEquals`.
-9. **Conversion** – between arrays and collections (`Arrays.asList`, `toArray`).
-10. **Multidimensional Handling** – working with 2D (or jagged) arrays.
-
 ---
 
 ## Operations Overview
@@ -158,8 +143,6 @@ Arrays provide a foundation for many algorithms and data structures and are freq
 
 ---
 
-<!-- [Rest of sections 2–14 unchanged] -->
-
 ---
 
 ## 15. Array Methods & Functions
@@ -191,5 +174,171 @@ Java provides a rich set of **utility methods** for array manipulation and analy
 | `long hashCode(int[] a)`                                  | Returns a hash code based on the contents of the array.                       |
 | `long deepHashCode(Object[] a)`                           | Returns a deep hash code for nested arrays.                                   |
 
-*End of guide*
+---
 
+## 16. Example Code for Array Methods & Functions
+
+Below are individual code shells demonstrating each utility method separately.
+
+### 16.1 `void sort(int[] a)`
+
+```java
+int[] nums = {3, 1, 2};
+Arrays.sort(nums);
+// nums: [1, 2, 3]
+```
+
+### 16.2 `void sort(int[] a, int fromIndex, int toIndex)`
+
+```java
+int[] arr = {5, 4, 3, 2, 1};
+Arrays.sort(arr, 1, 4);
+// arr: [5, 2, 3, 4, 1]
+```
+
+### 16.3 `void parallelSort(long[] a)`
+
+```java
+long[] data = {10L, 30L, 20L};
+Arrays.parallelSort(data);
+// data: [10, 20, 30]
+```
+
+### 16.4 `<T> void sort(T[] a, Comparator<? super T> c)`
+
+```java
+String[] names = {"Bob", "Alice", "Charlie"};
+Arrays.sort(names, Comparator.reverseOrder());
+// names: ["Charlie", "Bob", "Alice"]
+```
+
+### 16.5 `int binarySearch(int[] a, int key)`
+
+```java
+int idx = Arrays.binarySearch(nums, 2);
+// idx: 1
+```
+
+### 16.6 `int binarySearch(T[] a, T key, Comparator<? super T> c)`
+
+```java
+int sidx = Arrays.binarySearch(names, "Bob", Comparator.reverseOrder());
+// sidx: 1
+```
+
+### 16.7 `boolean equals(int[] a, int[] b)`
+
+```java
+boolean isEqual = Arrays.equals(nums, new int[]{1,2,3});
+// isEqual: true
+```
+
+### 16.8 `boolean deepEquals(Object[] a, Object[] b)`
+
+```java
+Integer[][] m1 = {{1,2}, {3,4}};
+Integer[][] m2 = {{1,2}, {3,4}};
+boolean deepEq = Arrays.deepEquals(m1, m2);
+// deepEq: true
+```
+
+### 16.9 `int mismatch(int[] a, int[] b)`
+
+```java
+int mis = Arrays.mismatch(new int[]{1,2,3}, new int[]{1,0,3});
+// mis: 1
+```
+
+### 16.10 `int[] copyOf(int[] original, int newLength)`
+
+```java
+int[] copy = Arrays.copyOf(nums, 5);
+// copy: [1,2,3,0,0]
+```
+
+### 16.11 `<T> T[] copyOfRange(T[] original, int from, int to)`
+
+```java
+String[] sub = Arrays.copyOfRange(names, 0, 2);
+// sub: ["Charlie","Bob"]
+```
+
+### 16.12 `void fill(boolean[] a, boolean val)`
+
+```java
+boolean[] flags = new boolean[3];
+Arrays.fill(flags, true);
+// flags: [true, true, true]
+```
+
+### 16.13 `void setAll(int[] a, IntUnaryOperator generator)`
+
+```java
+int[] squares = new int[5];
+Arrays.setAll(squares, i -> i * i);
+// squares: [0,1,4,9,16]
+```
+
+### 16.14 `void parallelPrefix(int[] a, IntBinaryOperator op)`
+
+```java
+int[] prefix = {1,2,3,4};
+Arrays.parallelPrefix(prefix, (x,y) -> x + y);
+// prefix: [1,3,6,10]
+```
+
+### 16.15 `String toString(Object[] a)`
+
+```java
+String s = Arrays.toString(names);
+// s: "[Charlie, Bob, Alice]"
+```
+
+### 16.16 `String deepToString(Object[] a)`
+
+```java
+String ds = Arrays.deepToString(m1);
+// ds: "[[1, 2], [3, 4]]"
+```
+
+### 16.17 `<T> List<T> asList(T... a)`
+
+```java
+List<String> list = Arrays.asList("X", "Y");
+// list: [X, Y]
+```
+
+### 16.18 `Stream<T> stream(T[] a)`
+
+```java
+int sum = Arrays.stream(nums).sum();
+// sum: 6
+```
+
+### 16.19 `Stream<T> parallelStream(T[] a)`
+
+```java
+int count = (int) Arrays.stream(nums).parallel().filter(n -> n > 1).count();
+// count: 2
+```
+
+### 16.20 `Spliterator<T> spliterator(T[] a)`
+
+```java
+Spliterator<Integer> spl = Arrays.spliterator(new Integer[]{1,2,3});
+spl.forEachRemaining(System.out::println);
+```
+
+### 16.21 `long hashCode(int[] a)`
+
+```java
+long hc = Arrays.hashCode(nums);
+// hc: some hash value
+```
+
+### 16.22 `long deepHashCode(Object[] a)`
+
+```java
+long dhc = Arrays.deepHashCode(new Object[]{new int[]{1,2}});
+// dhc: some deep hash value
+```
