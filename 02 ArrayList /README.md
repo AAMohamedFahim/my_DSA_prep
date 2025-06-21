@@ -60,7 +60,10 @@ ArrayList<String> copy = new ArrayList<>(other);
 ```
 
 ---
-
+## cloning ArrayList 
+```java
+ArrayList<Integer> a2 = new ArrayList<>(a1);
+```
 ## Adding Elements
 
 ```java
