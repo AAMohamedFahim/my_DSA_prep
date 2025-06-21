@@ -4,9 +4,11 @@
 
 ## Table of Contents
 - [1. Arrays](./01%20Arrays/)
-- [2. ArrayList]()
+- [2. ArrayList](./02%20ArrayList/)
+- [3. String](./03%20String/)
+- [4. StringBuilder](./04%20StringBuilder/)
 
-
+---
 - [2. Strings](#2-strings)
 - [3. Linked List](#3-linked-list)
 - [4. Stacks](#4-stacks)
