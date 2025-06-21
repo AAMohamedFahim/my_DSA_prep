@@ -3,7 +3,10 @@
 # Key Data Structures for Coding Interviews
 
 ## Table of Contents
-- [1. Arrays](#1-arrays)
+- [1. Arrays](./01%20Arrays/)
+- [2. ArrayList]()
+
+
 - [2. Strings](#2-strings)
 - [3. Linked List](#3-linked-list)
 - [4. Stacks](#4-stacks)
