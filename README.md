@@ -7,10 +7,9 @@
 - [2. ArrayList](./02%20ArrayList%20/)
 - [3. String](./03%20String/)
 - [4. StringBuilder](./04%20StringBuilder/)
+- [5. Linked List](./05%20LinkedList/)
 
 ---
-- [2. Strings](#2-strings)
-- [3. Linked List](#3-linked-list)
 - [4. Stacks](#4-stacks)
 - [5. Queues](#5-queues)
 - [6. Hash Maps (Hash Table)](#6-hash-maps-hash-table)
