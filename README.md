@@ -9,9 +9,9 @@
 - [4. StringBuilder](./04%20StringBuilder/)
 - [5. Linked List](./05%20LinkedList/)
 - [6. Stacks](./06%20Stack/)
+- [7. Queues](./07%20Queue/)
 
 ---
-- [5. Queues](#5-queues)
 - [6. Hash Maps (Hash Table)](#6-hash-maps-hash-table)
 - [7. Heaps (Priority Queues)](#7-heaps-priority-queues)
 - [8. Trees](#8-trees)
