@@ -24,6 +24,36 @@
 
 ---
 
+
+```bash
+
+Arrays
+
+ArrayList
+
+LinkedList
+
+Stack
+
+Queue
+
+Deque (Double-ended Queue – e.g., ArrayDeque)
+
+HashMap
+
+HashSet
+
+TreeMap (Sorted Map)
+
+TreeSet (Sorted Set)
+
+PriorityQueue (Min/Max Heap)
+
+String
+
+StringBuilder
+```
+
 ## **1. Arrays**
    - **Use Cases**: Storing a collection of elements.
    - **Applications**: Searching, sorting, sliding window problems, 2-pointer technique.
