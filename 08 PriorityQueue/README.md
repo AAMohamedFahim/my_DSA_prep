@@ -1,6 +1,6 @@
 # PriorityQueue in Java
 
-A comprehensive guide to using `PriorityQueue` in Java. This document covers its internal working, usage, and best practices, along with a complete overview of methods and performance insights.
+A comprehensive guide to using `PriorityQueue` in Java. This document covers its internal working, usage, and best practices, along with a complete overview of methods and performance insights. This guide is designed so that if you are learning `PriorityQueue` for the first time, you won’t need to refer to any other resource.
 
 ---
 
@@ -43,6 +43,8 @@ A `PriorityQueue` is an abstract data type where each element is associated with
 * **No null elements allowed**
 * **Unbounded size**: Grows as needed
 
+> Think of it like a task manager where tasks with higher importance (lower number in case of min-heap) get executed first.
+
 ---
 
 ## How it Works
@@ -59,7 +61,16 @@ Internally, a `PriorityQueue` uses a **binary heap** structure:
 * A "heapify-up" (also known as "bubble-up") process is triggered to maintain the heap property. This compares the added element with its parent and swaps if necessary.
 * When the head element is removed (`remove()`/`poll()`), the last element in the array is moved to the root.
 * Then a "heapify-down" (also known as "bubble-down") occurs, where the new root is compared with its children and swapped with the smaller one to maintain the min-heap property.
-* This process ensures that the smallest (or highest-priority) element is always at the top.
+
+#### Key Characteristics:
+
+* The heap is **complete**, meaning all levels are filled except possibly the last, and nodes are left-aligned.
+* **No duplicates restriction**: You can have duplicate values.
+* **Dynamic resizing**: Internally resizes the backing array as needed.
+
+#### Visual Example:
+
+If you insert the elements \[10, 4, 8, 3] in a `PriorityQueue`, it may internally rearrange to \[3, 4, 8, 10] based on priority.
 
 ---
 
