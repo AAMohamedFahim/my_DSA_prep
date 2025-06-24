@@ -10,6 +10,7 @@
 - [5. Linked List](./05%20LinkedList/)
 - [6. Stacks](./06%20Stack/)
 - [7. Queues](./07%20Queue/)
+- [8. PriorityQueue](./08%20PriorityQueue/)
 
 ---
 - [6. Hash Maps (Hash Table)](#6-hash-maps-hash-table)
