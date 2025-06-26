@@ -11,9 +11,9 @@
 - [6. Stacks](./06%20Stack/)
 - [7. Queues](./07%20Queue/)
 - [8. PriorityQueue](./08%20PriorityQueue/)
+- [9. Hash Maps](./09%20HashMap/)
 
 ---
-- [6. Hash Maps (Hash Table)](#6-hash-maps-hash-table)
 - [7. Heaps (Priority Queues)](#7-heaps-priority-queues)
 - [8. Trees](#8-trees)
 - [9. Graphs](#9-graphs)
